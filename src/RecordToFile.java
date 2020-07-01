@@ -12,9 +12,9 @@ public class RecordToFile {
         try (FileWriter fileWriter = new FileWriter(fileName)) {
             do {
                 System.out.println("Введите команду 'stop' для остановки ввода или введите текст: ");
-                text = bufferedReader.readLine();
+                text = bufferedReader.readLine( );
                 if (text.equalsIgnoreCase("stop")) break;
-                text= text+"\n";
+                text = text + "\n";
                 fileWriter.write(text);
             } while (!text.equalsIgnoreCase("stop"));
         } catch (IOException e) {
