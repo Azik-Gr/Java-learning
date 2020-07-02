@@ -7,6 +7,7 @@ public class FinalTask3 {
         double dollarRate = scanner.nextDouble();
         System.out.println("Введите сумму в рублях: ");
         double amountRubles = scanner.nextDouble();
-        System.out.println();
+        double sum = (double) amountRubles/dollarRate;
+        System.out.format("%.2f",sum);
     }
 }
