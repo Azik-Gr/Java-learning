@@ -14,7 +14,7 @@ public class FinalTask2 {
         for (int i = 1; i < size; i++) {
             j = 0;
             while (j < i) {
-                if (myArray[j] < myArray[i]) {
+                if (myArray[j] <= myArray[i]) {
                     j++;
                 } else break;
             }
